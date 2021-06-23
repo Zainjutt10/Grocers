@@ -1,0 +1,73 @@
+body
+{
+   margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: gainsboro;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.81)),url(Images/1.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sec
+{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding: 20px;
+    background: white;
+    margin: 8% auto 0;
+    text-align: center;
+   border-radius: 20px;
+}
+h1
+{
+    margin-bottom: 10px;
+}
+.log input
+{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width:100%;
+    border: 1px solid #999;
+    outline:none ;
+}
+hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form .btn1
+{
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: skyblue;
+}
+.btn1:hover
+{
+    background:cadetblue;
+}
+a
+{
+    text-decoration: none;
+}
+.btn2
+{
+    border-radius: 10px;
+   background-color: rgba(8, 215, 242, 0.72);
+    color: black;
+    opacity: 0.5;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+.btn2:hover
+{
+    opacity: 1;
+}

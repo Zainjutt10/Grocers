@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+      background: #ded9d9;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.example{
+    text-align: right;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 0;
+    margin-left: 20px;
+  font-size: 17px;
+}
+.btn
+{
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #0b7dda;
+}
+.btn-1
+{
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid grey;
+}
+.dropdown
+{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size:17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  cursor: pointer;
+  background-color: inherit;
+    margin-right: 0px;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.back
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: 0;
+
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 0;
+}
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background-image:url(Images/1.png);
+}
+.slide:nth-of-type(2) {
+    background-image: url(Images/2.png);
+}
+.slide:nth-of-type(3) {
+    background-image: url(Images/3.png);
+}
+.slide:nth-of-type(4) {
+    background-image: url(Images/4.png);
+}
+.slide:nth-of-type(5) {
+    background-image: url(Images/5.png);
+
+}
+section{
+    padding: 50px 0px;
+}
+.desc
+{
+/*    margin-top: 20px;*/
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.cat
+{
+   margin-bottom: 20px;
+   font-size: 80px;
+    font-style: italic;
+    font-family: cursive;
+    font-stretch: semi-expanded;
+}
+.fruits a, .veg a, .fash a
+{
+    font-family:serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+.fruits a:hover, .veg a:hover,.fash a:hover
+{
+    color: firebrick;
+}
+.veg
+{
+    margin-top: 10px;
+    padding: 10px;
+}
+.fash
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.price
+{
+    margin-top: 10px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.81)), url(Images/6.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.item-1
+{
+  float: left;
+  width: 33.33%;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+.item-1 p
+{
+    margin-left: 10px;
+}
+.item-1 img
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.add, .sub
+{
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.item-1 input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 40px;
+    height: 28px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.item-1 button
+{
+    border-radius: 10px;
+
+}
+.minus-btn
+{
+    margin-right: 10px;
+}
+.item-1 .fa
+{
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.check
+{
+    margin-left: 40%;
+   justify-content: center;
+    text-align: center;
+    width: 25%;
+    margin-bottom: 50px;
+    background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+    cursor: pointer;
+}
+.check:hover {opacity: 1}
+.popup a
+{
+    text-decoration: none;
+}

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Departmental Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="index.js" charset="utf-8"></script>
+    </head>
+    <body>
+         <header>
+             <div class="topnav" >
+                 <a class="active" href="#home">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categories
+                        <i class="fa fa-caret-down" ></i> 
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#fruits">Fruits</a>
+                            <a href="#veg">Vegetables</a>
+                            <a href="#fash">Household Items</a>
+                    </div>
+                 </div>
+                 <a href="Login.html">Log In</a>
+                 <a href="signup.html">Sign Up</a>
+                    <form class="example" action="#">
+                        <input type="text" placeholder="Search..">
+                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                        <button type="submit" class="btn-1"><i class="fa fa-shopping-cart"></i></button>
+                    </form>
+             </div>
+             <div class="back">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+        </header>
+        <section class="desc">
+        <h1 class="cat"><b>"Categories"</b></h1>
+            <div id="fruits" class="fruits">
+                <a href="#">Fruits</a>
+            </div>
+            <div class="price">
+                <div class="row">
+            <div class="item-1">
+                  <img src="Images/fruit-1.jpg" alt="Banana">
+                  <h3>Banana</h3>
+                <p class="fr"><button class="plus-btn" onclick="test1();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input class="empty" id="1" type="text" name="name" value="0" ><button class="minus-btn" onclick="test();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>80/kg(Rs)</p>
+                </div>
+            
+            <div class="item-1">
+                  <img src="Images/fruit-2.jpg" alt="Apple">
+                  <h3>Apple</h3>
+                <p class="fr"><button class="plus-btn" onclick="test2();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="2" type="text" name="name" value="0"><button class="minus-btn" onclick="tes2();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>120/kg(Rs)</p>
+                </div>
+            <div class="item-1">
+                  <img src="Images/fruit-3.jpg" alt="Guava">
+                  <h3>Guava</h3>
+                    <p class="fr"><button class="plus-btn" onclick="test3();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="3" type="text" name="name" value="0"><button class="minus-btn" onclick="tes3();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>70/kg(Rs)</p>
+                </div>
+             </div>
+            </div>
+            <div id="veg" class="veg">
+                <a href="#">Vegetables</a>
+            </div>
+            <div class="price">
+                <div class="row">
+            <div class="item-1">
+                  <img src="Images/veg-1.jpg" alt="onion">
+                  <h3>Onion</h3>
+                <p><button class="plus-btn" onclick="test4();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="4" type="text" name="name" value="0"><button class="minus-btn" onclick="tes4();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>50/kg(Rs)</p>
+                </div>
+            
+            <div class="item-1">
+                  <img src="Images/veg-2.jpg" alt="Tomato">
+                  <h3>Tomato</h3>
+                <p><button class="plus-btn" onclick="test5();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="5" type="text" name="name" value="0"><button class="minus-btn" onclick="tes5();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>60/kg(Rs)</p>
+                </div>
+            <div class="item-1">
+                  <img src="Images/veg-3.jpg" alt="Potato">
+                  <h3>Potato</h3>
+                    <p><button class="plus-btn" onclick="test6();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="6" type="text" name="name" value="0"><button class="minus-btn" onclick="tes6();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>50/kg(Rs)</p>
+                </div>
+             </div>
+            </div>
+            <div id="fash" class="fash">
+                <a href="#">Household Items</a>
+            </div>
+            <div class="price">
+                <div class="row">
+            <div class="item-1">
+                  <img src="Images/h-01.jpg" alt="surf">
+                  <h3>Surf excel</h3>
+                <p><button class="plus-btn" onclick="test7();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="7" type="text" name="name" value="0"><button class="minus-btn" onclick="tes7();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>80 Rupees</p>
+                </div>
+            
+            <div class="item-1">
+                  <img src="Images/h-2.jpg" alt="hand-sanitizer">
+                  <h3>Hand Senitizer</h3>
+                <p><button class="plus-btn" onclick="test8();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="8" type="text" name="name" value="0"><button class="minus-btn" onclick="tes8();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>120 Rupees</p>
+                </div>
+            <div class="item-1">
+                  <img src="Images/h-3.jpg" alt="Rice">
+                  <h3>Rice</h3>
+                    <p><button class="plus-btn" onclick="test9();"><i class="fa fa-plus-square" style="font-size:24px"></i></button><input id="9" type="text" name="name" value="0"><button class="minus-btn" onclick="tes9();" ><i class="fa fa-minus-circle" style="font-size:24px"></i></button>140/kg(Rs)</p>
+                </div>
+             </div>
+            </div>
+        </section>
+            <div class="popup">
+                        <a href="bill.html"> <button class="check" onclick="last();">Check Out</button></a>
+        </div>
+        
+    <script src="index.js" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </body>
+</html>
